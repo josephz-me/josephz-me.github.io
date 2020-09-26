@@ -30,11 +30,11 @@ html {
   -webkit-font-smoothing: antialiased;
   font-family: NBAkademie-Regular, sans-serif;
   overflow: hidden;
-  background: linear-gradient(122.18deg, #c0c0c0 8.01%, #a6a6c2 95.95%);
+  /* background: linear-gradient(122.18deg, #c0c0c0 8.01%, #a6a6c2 95.95%);
   background-size: cover;
   min-width: 100vw;
   min-height: 100vh;
-  z-index: -1;
+  z-index: -1; */
 }
 
 body {
