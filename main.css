@@ -122,6 +122,9 @@ a:hover {
 }
 
 @media (max-width: 450px) {
+  html {
+    overflow: visible;
+  }
   p {
     max-width: 600px;
     font-size: 19px;
