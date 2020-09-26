@@ -124,7 +124,7 @@ a:hover {
     overflow: visible;
   }
   body {
-    min-height: calc(1.1 * 100vh);
+    min-height: 100%;
   }
   p {
     max-width: 600px;
