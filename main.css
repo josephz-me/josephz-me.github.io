@@ -29,7 +29,7 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-family: NBAkademie-Regular, sans-serif;
-  /* overflow: hidden; */
+  overflow: hidden;
   background: linear-gradient(122.18deg, #c0c0c0 8.01%, #a6a6c2 95.95%);
   background-size: cover;
   min-width: 100vw;
