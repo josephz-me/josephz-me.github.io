@@ -29,16 +29,14 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-family: NBAkademie-Regular, sans-serif;
-  background: linear-gradient(122.18deg, #c0c0c0 8.01%, #a6a6c2 95.95%);
-  background-size: cover;
-
-  min-width: 100vw;
-  min-height: 100vh;
   overflow: hidden;
 }
 
-.noise {
-  z-index: 200;
+body {
+  background: linear-gradient(122.18deg, #c0c0c0 8.01%, #a6a6c2 95.95%);
+  background-size: cover;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 ::selection {
@@ -124,6 +122,9 @@ a:hover {
 @media (max-width: 450px) {
   html {
     overflow: visible;
+  }
+  body {
+    min-height: calc(1.1 * 100vh);
   }
   p {
     max-width: 600px;
