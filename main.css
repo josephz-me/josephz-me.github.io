@@ -49,7 +49,7 @@ html {
 
 p {
   padding: 30px 30px 30px 30px;
-  max-width: 600px;
+  max-width: 590px;
   font-size: 22px;
   cursor: default;
   animation: loadIn 0.5s forwards linear 0.4s;
