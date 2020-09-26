@@ -5,6 +5,11 @@ var xmouse, ymouse;
 $on("mousemove", function (e) {
   xmouse = e.clientX || e.pageX;
   ymouse = e.clientY || e.pageY;
+  // let x = xmouse;
+  // let y = ymouse;
+  // // ball.style.left = x - 150 + "px";
+  // // ball.style.top = y - 150 + "px";
+  // // console.log("ran");
 });
 
 var ball = $("#ball");
@@ -16,9 +21,15 @@ var x = void 0,
   ty = 0,
   key = -1;
 
+var is_chrome =
+  typeof window.chrome === "object" &&
+  navigator.appVersion.indexOf("Edge") === -1;
+
+if (is_chrome) {
+}
+
 var followMouse = function followMouse() {
   key = requestAnimationFrame(followMouse);
-
   if (!x || !y) {
     x = xmouse;
     y = ymouse;

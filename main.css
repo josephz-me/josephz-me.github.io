@@ -53,7 +53,7 @@ html {
 
 p {
   margin: 30px 30px 30px 30px;
-  max-width: 500px;
+  max-width: 600px;
   font-size: 22px;
   cursor: default;
   animation: loadIn 0.5s forwards linear 0.4s;
@@ -64,8 +64,8 @@ p {
 a,
 p {
   letter-spacing: -0.007rem;
-  transition: opacity 0.2s;
-  -webkit-transition: opacity 0.2s;
+  /* transition: opacity 0.2s;
+  -webkit-transition: opacity 0.2s; */
 }
 
 a {
@@ -102,6 +102,14 @@ a:hover {
   pointer-events: none;
   z-index: -1;
   filter: blur(200px);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  transform: translate3d(0, 0, 0);
+  transform: translateZ(0);
 }
 
 @keyframes loadIn {
