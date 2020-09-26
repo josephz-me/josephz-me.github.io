@@ -1,0 +1,121 @@
+@charset "UTF-8";
+@font-face {
+  font-family: NBAkademie-Regular;
+  src: url("../fonts/nb-akademie-regular_webfont.woff2") format("woff2"),
+    url("../fonts/nb-akademie-regular_webfont.woff") format("woff"),
+    url("../fonts/nb-akademie-regular_webfont.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  font-style: normal;
+  letter-spacing: 0.1px;
+
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-family: NBAkademie-Regular, sans-serif;
+  background: linear-gradient(122.18deg, #c0c0c0 8.01%, #a6a6c2 95.95%);
+  background-size: cover;
+
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.noise {
+  z-index: 200;
+}
+
+::selection {
+  color: none;
+  background: none;
+}
+/* For Mozilla Firefox */
+::-moz-selection {
+  color: none;
+  background: none;
+}
+
+p {
+  margin: 30px 30px 30px 30px;
+  max-width: 600px;
+  font-size: 22px;
+  cursor: default;
+  animation: loadIn 8s forwards cubic-bezier(0.02, 0.8, 0.2, 1) 0.5s;
+  -webkit-animation: loadIn 8s forwards cubic-bezier(0.02, 0.8, 0.2, 1) 0.5s;
+  opacity: 0;
+}
+
+a,
+p {
+  letter-spacing: -0.04rem;
+  /* transition: opacity 0.3s; */
+  /* -webkit-transition: opacity 0.1s; */
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  /* font-style: italic; */
+  opacity: 50%;
+}
+
+.wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+#ball {
+  width: 400px;
+  height: 400px;
+  background: rgb(30, 32, 122);
+  opacity: 20%;
+  /* border: 1px solid white; */
+  /* mix-blend-mode: difference; */
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /* margin: -10px 0 0 -10px; */
+  pointer-events: none;
+  z-index: -1;
+  filter: blur(200px);
+}
+
+@keyframes loadIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 450px) {
+  p {
+    max-width: 600px;
+    font-size: 16px;
+  }
+}
