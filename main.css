@@ -53,11 +53,11 @@ html {
 
 p {
   margin: 30px 30px 30px 30px;
-  max-width: 550px;
+  max-width: 500px;
   font-size: 22px;
   cursor: default;
-  animation: loadIn 0.5s forwards linear 0s;
-  -webkit-animation: loadIn 0.5s forwards linear 0s;
+  animation: loadIn 0.5s forwards linear 0.4s;
+  -webkit-animation: loadIn 0.5s forwards linear 0.4s;
   opacity: 0;
 }
 
