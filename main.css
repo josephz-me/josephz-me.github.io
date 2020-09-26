@@ -121,6 +121,7 @@ a:hover {
 @media (max-width: 450px) {
   html {
     overflow: visible;
+    min-height: 130vh;
   }
 
   p {

@@ -5,11 +5,6 @@ var xmouse, ymouse;
 $on("mousemove", function (e) {
   xmouse = e.clientX || e.pageX;
   ymouse = e.clientY || e.pageY;
-  // let x = xmouse;
-  // let y = ymouse;
-  // // ball.style.left = x - 150 + "px";
-  // // ball.style.top = y - 150 + "px";
-  console.log("ran");
 });
 
 var ball = $("#ball");
