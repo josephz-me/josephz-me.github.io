@@ -38,8 +38,6 @@ html {
 }
 
 body {
-  overflow-x: hidden;
-  *overflow-y: hidden;
   background: linear-gradient(122.18deg, #c0c0c0 8.01%, #a6a6c2 95.95%);
   background-size: cover;
   min-width: 100vw;
@@ -131,12 +129,16 @@ a:hover {
 @media (max-width: 450px) {
   html {
     overflow: visible;
-    min-height: 100%;
   }
 
   p {
     max-width: 600px;
     font-size: 19px;
+  }
+
+  a:hover {
+    /* font-style: italic; */
+    opacity: 100%;
   }
 
   a,
