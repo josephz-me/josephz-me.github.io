@@ -9,7 +9,7 @@ $on("mousemove", function (e) {
   // let y = ymouse;
   // // ball.style.left = x - 150 + "px";
   // // ball.style.top = y - 150 + "px";
-  // // console.log("ran");
+  console.log("ran");
 });
 
 var ball = $("#ball");
@@ -44,6 +44,6 @@ var followMouse = function followMouse() {
       y += dy;
     }
   }
-  ball.style.left = x - 150 + "px";
-  ball.style.top = y - 150 + "px";
+  ball.style.left = x - 180 + "px";
+  ball.style.top = y - 180 + "px";
 };

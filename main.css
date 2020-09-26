@@ -34,6 +34,7 @@ html {
   background-size: cover;
   min-width: 100vw;
   min-height: 100vh;
+  z-index: -1;
 }
 
 body {
@@ -43,6 +44,7 @@ body {
   background-size: cover;
   min-width: 100vw;
   min-height: 100vh;
+  z-index: -1;
 }
 
 ::selection {
@@ -94,18 +96,18 @@ a:hover {
 #ball {
   width: 400px;
   height: 400px;
-  background: rgb(30, 32, 122);
+  background: rgb(6, 9, 167);
   opacity: 20%;
   /* border: 1px solid white; */
   /* mix-blend-mode: difference; */
   border-radius: 50%;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 110%;
+  top: 110%;
   /* margin: -10px 0 0 -10px; */
   pointer-events: none;
-  z-index: -1;
-  filter: blur(200px);
+  z-index: 1;
+
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
   -webkit-transform: translate3d(0, 0, 0);
@@ -114,6 +116,7 @@ a:hover {
   perspective: 1000;
   transform: translate3d(0, 0, 0);
   transform: translateZ(0);
+  filter: blur(200px);
 }
 
 @keyframes loadIn {
