@@ -66,8 +66,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.4.0/smooth-scrollbar.js"></script>
     <reference path="myjsfile.d.ts" />
     <script>
-      var Scrollbar = window.Scrollbar;
-      Scrollbar.init(document.querySelector("#my-scrollbar"));
+      function isMobile() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        );
+      }
+
+      if (isMobile()) {
+        var Scrollbar = window.Scrollbar;
+        Scrollbar.init(document.querySelector("#my-scrollbar"));
+      }
     </script>
   </body>
 </html>
