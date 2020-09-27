@@ -81,6 +81,7 @@ a:hover {
   right: 0;
   overflow: hidden;
   pointer-events: none;
+  height: 100vh;
 }
 
 #ball {

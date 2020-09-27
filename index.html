@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="my-scrollbar" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -62,5 +62,12 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script/landing.js"></script>
+    <script src="script/scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.4.0/smooth-scrollbar.js"></script>
+    <reference path="myjsfile.d.ts" />
+    <script>
+      var Scrollbar = window.Scrollbar;
+      Scrollbar.init(document.querySelector("#my-scrollbar"));
+    </script>
   </body>
 </html>
