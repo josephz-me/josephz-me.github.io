@@ -146,6 +146,16 @@ a:hover {
     font-size: 19px;
   }
 
+  .footer {
+    bottom: 0;
+    right: 0;
+    position: fixed;
+  }
+
+  .footer a:hover {
+    opacity: 0.1;
+  }
+
   .wrap {
     display: none;
   }
