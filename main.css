@@ -26,8 +26,8 @@ html {
 
   font-family: baskerville-urw, serif;
   /* overflow: hidden; */
-  /* background: linear-gradient(122.18deg, #050505 8.01%, #1b1b1b 95.95%);  */
-  background: linear-gradient(122.18deg, #141414 8.01%, #0c0c0c 95.95%);
+  /* background: rgb(17, 17, 17); */
+  background: linear-gradient(122.18deg, #1d1d1d 8.01%, #0c0c0c 95.95%);
   background-size: cover;
   min-width: 100vw;
   min-height: 100vh;
@@ -94,7 +94,6 @@ a:hover {
   width: 1000px;
   height: 1000px;
   /* background: rgb(204, 204, 204); */
-  /* background: radial-gradient(white, #141414); */
   background: radial-gradient(circle farthest-side, #dadada, #141414);
   opacity: 2%;
   /* border: 1px solid white; */
