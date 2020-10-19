@@ -124,7 +124,7 @@ a:hover {
 
 .footer a {
   text-decoration: none;
-  opacity: 0.2;
+  opacity: 0.1;
   transition: opacity 0.5s;
 }
 
