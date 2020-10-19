@@ -1,11 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: NBAkademie-Regular;
-  src: url("../fonts/nb-akademie-regular_webfont.woff2") format("woff2"),
-    url("../fonts/nb-akademie-regular_webfont.woff") format("woff"),
-    url("../fonts/nb-akademie-regular_webfont.ttf") format("truetype");
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +6,8 @@
   outline: 0;
   vertical-align: baseline;
   font-style: normal;
-  letter-spacing: 0.1px;
+  line-height: 1.8rem;
+  /* letter-spacing: 0.1px; */
 
   -webkit-user-drag: none;
   -khtml-user-drag: none;
@@ -28,9 +22,12 @@
 html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  font-family: NBAkademie-Regular, sans-serif;
+  /* font-family: NBAkademie-Regular, sans-serif; */
+
+  font-family: baskerville-urw, serif;
   /* overflow: hidden; */
-  background: linear-gradient(122.18deg, #c0c0c0 8.01%, #a6a6c2 95.95%);
+  /* background: linear-gradient(122.18deg, #050505 8.01%, #1b1b1b 95.95%);  */
+  background: linear-gradient(122.18deg, #141414 8.01%, #0c0c0c 95.95%);
   background-size: cover;
   min-width: 100vw;
   min-height: 100vh;
@@ -54,27 +51,31 @@ body {
 p {
   padding: 30px 30px 30px 30px;
   max-width: 585px;
-  font-size: 22px;
+  font-size: 24px;
   cursor: default;
   animation: loadIn 0.5s forwards linear 0.4s;
   -webkit-animation: loadIn 0.5s forwards linear 0.4s;
   opacity: 0;
+  font-weight: 400;
+  font-style: normal;
 }
 
 a,
 p {
-  letter-spacing: -0.007rem;
+  /* letter-spacing: -0.007rem; */
   /* transition: opacity 0.2s;
   -webkit-transition: opacity 0.2s; */
+  color: white;
 }
 
 a {
-  color: black;
+  letter-spacing: 0.01rem;
+  font-style: italic;
 }
 
 a:hover {
   /* font-style: italic; */
-  opacity: 50%;
+  opacity: 0.7;
 }
 
 .wrap {
@@ -90,19 +91,19 @@ a:hover {
 }
 
 #ball {
-  width: 400px;
-  height: 400px;
-  background: rgb(6, 9, 167);
-  opacity: 20%;
+  width: 1000px;
+  height: 1000px;
+  /* background: rgb(204, 204, 204); */
+  /* background: radial-gradient(white, #141414); */
+  background: radial-gradient(circle farthest-side, #dadada, #141414);
+  opacity: 2%;
   /* border: 1px solid white; */
   /* mix-blend-mode: difference; */
   border-radius: 50%;
   position: absolute;
-  left: 110%;
-  top: 110%;
   /* margin: -10px 0 0 -10px; */
   pointer-events: none;
-  z-index: 1;
+  z-index: -1;
 
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
@@ -112,7 +113,8 @@ a:hover {
   perspective: 1000;
   transform: translate3d(0, 0, 0);
   transform: translateZ(0);
-  filter: blur(200px);
+  /* filter: blur(50px);
+  -webkit-filter: blur(50px); */
 }
 
 .footer {
@@ -136,7 +138,7 @@ a:hover {
     opacity: 0;
   }
   100% {
-    opacity: 1;
+    opacity: 0.8;
   }
 }
 

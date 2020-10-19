@@ -39,6 +39,6 @@ var followMouse = function followMouse() {
       y += dy;
     }
   }
-  ball.style.left = x - 180 + "px";
-  ball.style.top = y - 180 + "px";
+  ball.style.left = x - 500 + "px";
+  ball.style.top = y - 500 + "px";
 };
