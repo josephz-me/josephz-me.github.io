@@ -50,7 +50,7 @@ body {
 
 p {
   padding: 30px 30px 30px 30px;
-  max-width: 585px;
+  max-width: 590px;
   font-size: 24px;
   cursor: default;
   animation: loadIn 0.5s forwards linear 0.4s;
@@ -137,7 +137,7 @@ a:hover {
     opacity: 0;
   }
   100% {
-    opacity: 0.8;
+    opacity: 0.85;
   }
 }
 
