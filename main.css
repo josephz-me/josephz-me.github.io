@@ -166,6 +166,7 @@ a {
   }
 
   p {
+    padding: 16px 16px 16px 16px;
     max-width: 600px;
     font-size: 19px;
   }
