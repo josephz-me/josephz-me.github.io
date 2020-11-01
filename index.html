@@ -10,6 +10,7 @@
       name="description"
       content="Joseph is a designer exploring various forms of of multimodal interaction."
     />
+
     <meta
       name="keywords"
       content="joseph, zhang, josephz, jospehz.me, jxsephz, art , design, carnegie mellon, design, cmu, cmu, design, ux design, art, graphic design, interaction design, apple"
@@ -24,35 +25,37 @@
       <p>
         Joseph is a designer exploring system-level interaction patterns and
         multimodal experiences. He is an undergraduate at the Carnegie Mellon
-        <a target="_blank" href="https://design.cmu.edu/">School of Design</a>
+        <span><a target="_blank" href="https://design.cmu.edu/">School of Design</a></span>
         and
-        <a target="_blank" href="https://www.hcii.cmu.edu/"
+        <span><a target="_blank" href="https://www.hcii.cmu.edu/"
           >Human-Computer Interaction Institute</a
         >
         where he plays with code, visual design, and experimental forms of
         interaction.
         <br /><br />Most recently, he was an Interaction Design Intern at
-        <a target="_blank" href="https://www.apple.com/siri/">Apple</a> [S’20]
+        <span><a target="_blank" href="https://www.apple.com/siri/">Apple</a></span> [S’20]
         building conversational patterns and is now designing intent-based
         interfaces with
-        <a target="_blank" href="https://www.brain.ai">Brain Technologies</a>
+        <span><a target="_blank" href="https://www.brain.ai">Brain Technologies</a>
+</span>
         [F’20]. In his free time, he cooks amateur Chinese food, needlessly
         checks LinkedIn, and reads books like
-        <a
+        <span><a
           target="_blank"
           href="https://www.amazon.com/Ruthless-Elimination-Hurry-Emotionally-Spiritually/dp/0525653090"
           >this</a
         >. <br /><br />
 
         Let's talk: <br />
-        [josephzhang@cmu.edu]<br />
+        josephzhang@cmu.edu<br />
         <br />—<br />
-        <a target="_blank" href="resume-zhang.pdf">CV</a><br />
-        <a target="_blank" href="https://www.linkedin.com/in/josephzme/"
+        <span><a target="_blank" href="resume-zhang.pdf">CV</a>
+</span><br />
+        <span><a target="_blank" href="https://www.linkedin.com/in/josephzme/"
           >LinkedIn</a
         >
         <br />
-        <a target="_blank" href="https://www.instagram.com/josephhhz"
+        <span><a target="_blank" href="https://www.instagram.com/josephhhz"
           >Instagram</a
         >
       </p>
@@ -60,31 +63,49 @@
     <!-- link to old site -->
     <footer>
       <p class="footer">
-        <a target="_blank" href="https://design-portfolio-ft809uunh.vercel.app/"
+        <span><a target="_blank" href="https://design-portfolio-ft809uunh.vercel.app/"
           >View Work</a
         >
       </p>
     </footer>
 
     <div class="wrap">
-      <div id="ball"></div>
+      <div class="ball"></div>
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="script/landing.js"></script>
-    <!-- <script src="script/scroll.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.4.0/smooth-scrollbar.js"></script>
-    <script>
-      // function isMobile() {
-      //   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-      //     navigator.userAgent
-      //   );
-      // }
-
-      // if (isMobile()) {
-      var Scrollbar = window.Scrollbar;
-      Scrollbar.init(document.querySelector("#my-scrollbar"));
-      // }
-    </script>
   </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
+
+  <script src="script/landing.js"></script>
+  <!-- <script src="script/scroll.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.4.0/smooth-scrollbar.js"></script>
+  <script>
+    // function isMobile() {
+    //   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    //     navigator.userAgent
+    //   );
+    // }
+
+    // if (isMobile()) {
+    var Scrollbar = window.Scrollbar;
+    Scrollbar.init(document.querySelector("#my-scrollbar"));
+    // }
+    jQuery(function ($) {
+      $("a").hover(
+        function () {
+          console.log("done");
+          $(".ball").addClass("ballHighlighted");
+        },
+        function () {
+          $(".ball").removeClass("ballHighlighted");
+          console.log("left");
+        }
+      );
+    });
+  </script>
 </html>

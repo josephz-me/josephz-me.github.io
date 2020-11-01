@@ -20,7 +20,7 @@
 }
 
 html {
-  text-rendering: optimizeLegibility;
+  /* text-rendering: optimizeLegibility; */
   -webkit-font-smoothing: antialiased;
   /* font-family: NBAkademie-Regular, sans-serif; */
 
@@ -69,13 +69,15 @@ p {
 }
 
 a {
-  letter-spacing: 0.01rem;
+  /* letter-spacing: 0.01rem; */
   font-style: italic;
+  /* text-decoration: none; */
+  opacity: 0.5;
 }
 
 a:hover {
   /* font-style: italic; */
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .wrap {
@@ -90,13 +92,13 @@ a:hover {
   min-height: 100vh;
 }
 
-#ball {
+.ball {
   width: 1000px;
   height: 1000px;
   /* background: rgb(204, 204, 204); */
-  background: radial-gradient(circle farthest-side, #dadada, #141414);
-  opacity: 2%;
-  /* border: 1px solid white; */
+  /* background: radial-gradient(circle farthest-side, #dadada, #141414); */
+  opacity: 50%;
+  border: 1px solid rgb(255, 255, 255);
   /* mix-blend-mode: difference; */
   border-radius: 50%;
   position: absolute;
@@ -116,6 +118,12 @@ a:hover {
   -webkit-filter: blur(50px); */
 }
 
+.ballHighlighted {
+  /* border: 1px solid rgb(224, 224, 224); */
+  opacity: 100%;
+  /* transition: 1s; */
+}
+
 .footer {
   bottom: 0;
   right: 0;
@@ -125,7 +133,7 @@ a:hover {
 .footer a {
   text-decoration: none;
   opacity: 0.1;
-  transition: opacity 0.5s;
+  /* transition: opacity 0.5s; */
 }
 
 .footer a:hover {
