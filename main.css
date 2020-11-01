@@ -69,15 +69,25 @@ p {
 }
 
 a {
-  /* letter-spacing: 0.01rem; */
   font-style: italic;
-  /* text-decoration: none; */
-  opacity: 0.5;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, white 33%, transparent 33%);
+  background-position: 0 1.2em;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  /* text-shadow: 2px 2px rgb(34, 34, 34, 0); */
+  text-shadow: 1px 1px rgb(34, 34, 34);
+}
+.bio a {
+  color: rgb(34, 34, 34, 0);
+  text-decoration: none;
+  text-shadow: none;
 }
 
-a:hover {
+.bio a:hover {
   /* font-style: italic; */
-  opacity: 1;
+  color: white;
+  text-shadow: 1px 1px rgb(34, 34, 34);
 }
 
 .wrap {
@@ -133,6 +143,7 @@ a:hover {
 .footer a {
   text-decoration: none;
   opacity: 0.1;
+  background-image: none;
   /* transition: opacity 0.5s; */
 }
 
