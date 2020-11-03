@@ -27,7 +27,8 @@ html {
   font-family: baskerville-urw, serif;
   /* overflow: hidden; */
   /* background: rgb(17, 17, 17); */
-  background: linear-gradient(122.18deg, #1d1d1d 8.01%, #0c0c0c 95.95%);
+  background-color: rgb(14, 14, 14);
+  /* background: black; */
   background-size: cover;
   min-width: 100vw;
   min-height: 100vh;
@@ -36,6 +37,8 @@ html {
 
 body {
   min-height: 100vh;
+
+  background: linear-gradient(122.18deg, #1d1d1d 8.01%, #0c0c0c 95.95%);
 }
 
 ::selection {
@@ -90,6 +93,7 @@ a {
 }
 
 .wrap {
+  z-index: 100;
   position: absolute;
   top: 0;
   left: 0;
