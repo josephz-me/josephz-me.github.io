@@ -168,7 +168,7 @@ a {
   p {
     padding: 16px 16px 16px 16px;
     max-width: 600px;
-    font-size: 19px;
+    font-size: 22px;
   }
 
   .footer {
@@ -196,7 +196,6 @@ a {
 
   a,
   p {
-    font-size: 19px;
     letter-spacing: 0.03rem;
     line-height: 1.4rem;
     /* transition: opacity 0.3s; */
