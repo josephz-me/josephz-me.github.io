@@ -101,30 +101,32 @@ a {
   min-height: 100vh;
 }
 
-.ball {
-  width: 1000px;
-  height: 1000px;
-  /* background: rgb(204, 204, 204); */
-  /* background: radial-gradient(circle farthest-side, #dadada, #141414); */
-  opacity: 50%;
-  border: 1px solid rgb(255, 255, 255);
-  /* mix-blend-mode: difference; */
-  border-radius: 50%;
-  position: absolute;
-  /* margin: -10px 0 0 -10px; */
-  pointer-events: none;
-  z-index: -1;
+@media (hover: hover) {
+  .ball {
+    width: 1000px;
+    height: 1000px;
+    /* background: rgb(204, 204, 204); */
+    /* background: radial-gradient(circle farthest-side, #dadada, #141414); */
+    opacity: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    /* mix-blend-mode: difference; */
+    border-radius: 50%;
+    position: absolute;
+    /* margin: -10px 0 0 -10px; */
+    pointer-events: none;
+    z-index: -1;
 
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-transform: translateZ(0);
-  backface-visibility: hidden;
-  perspective: 1000;
-  transform: translate3d(0, 0, 0);
-  transform: translateZ(0);
-  /* filter: blur(50px);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    transform: translate3d(0, 0, 0);
+    transform: translateZ(0);
+    /* filter: blur(50px);
   -webkit-filter: blur(50px); */
+  }
 }
 
 .ballHighlighted {
