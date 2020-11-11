@@ -174,15 +174,18 @@ footer a:hover {
     min-height: 120vh;
   }
 
-  p {
+  body {
     padding: 16px 16px 16px 16px;
+  }
+
+  p {
     max-width: 600px;
     font-size: 22px;
   }
 
-  .footer {
-    bottom: 0;
-    right: 0;
+  footer {
+    bottom: 30px;
+    right: 16px;
     position: fixed;
   }
 
