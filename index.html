@@ -59,11 +59,18 @@
     </main>
     <!-- link to old site -->
     <footer>
-      <p class="footer">
-        <a target="_blank" href="https://design-portfolio-ft809uunh.vercel.app/"
-          >View Work</a
-        >
-      </p>
+      <!-- <p></p> -->
+      <a
+        target="_blank"
+        href="https://medium.com/swlh/if-conversational-assistants-could-enhance-human-conversation-2cfb048cfc60"
+        >Thinkspace</a
+      >
+      <a target="_blank" href="https://www.josephz.me/reading-trends"
+        >Reading Trends</a
+      >
+      <a target="_blank" href="https://design-portfolio-ft809uunh.vercel.app/"
+        >Other</a
+      >
     </footer>
 
     <div class="wrap">
@@ -80,12 +87,10 @@
     jQuery(function ($) {
       $("a").hover(
         function () {
-          console.log("done");
           $(".ball").addClass("ballHighlighted");
         },
         function () {
           $(".ball").removeClass("ballHighlighted");
-          console.log("left");
         }
       );
     });
