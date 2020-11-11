@@ -52,7 +52,7 @@ body {
 }
 
 p {
-  max-width: 566px;
+  max-width: 550px;
   font-size: 24px;
   cursor: default;
   animation: loadIn 0.5s forwards linear 0.4s;
