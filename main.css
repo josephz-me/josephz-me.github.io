@@ -100,7 +100,7 @@ a {
   .ball {
     width: 1000px;
     height: 1000px;
-    opacity: 50%;
+    opacity: 0%;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 50%;
     position: absolute;
@@ -118,6 +118,8 @@ a {
     /* filter: blur(50px);
   -webkit-filter: blur(50px); */
     transition: 0.3s transform;
+    animation: ballLoadIn 0.5s forwards linear 0.8s;
+    -webkit-animation: ballLoadIn 0.5s forwards linear 0.8s;
   }
 }
 
@@ -155,6 +157,15 @@ footer a:hover {
   }
   100% {
     opacity: 0.85;
+  }
+}
+
+@keyframes ballLoadIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
   }
 }
 
@@ -200,7 +211,5 @@ footer a:hover {
   p {
     letter-spacing: 0.03rem;
     line-height: 1.4rem;
-    /* transition: opacity 0.3s; */
-    /* -webkit-transition: opacity 0.1s; */
   }
 }
