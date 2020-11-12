@@ -6,6 +6,7 @@
   outline: 0;
   vertical-align: baseline;
   font-style: normal;
+  line-height: 1.8rem;
   /* letter-spacing: 0.1px; */
 
   -webkit-user-drag: none;
@@ -20,12 +21,13 @@
 
 html {
   /* text-rendering: optimizeLegibility; */
-  /* font-family: baskerville-urw, serif; */
   -webkit-font-smoothing: antialiased;
+  /* font-family: NBAkademie-Regular, sans-serif; */
 
-  font-family: "DM Mono", monospace;
-
-  background-color: #111;
+  font-family: baskerville-urw, serif;
+  /* overflow: hidden; */
+  /* background: rgb(17, 17, 17); */
+  background: #111;
   /* background: black; */
   background-size: cover;
   height: 100%;
@@ -51,12 +53,8 @@ body {
 }
 
 p {
-<<<<<<< HEAD
-  max-width: 580px;
-=======
-  max-width: 566px;
+  max-width: 550px;
   font-size: 24px;
->>>>>>> parent of 9e31a0e... width tweak
   cursor: default;
   animation: loadIn 0.5s forwards linear 0.4s;
   -webkit-animation: loadIn 0.5s forwards linear 0.4s;
@@ -68,10 +66,6 @@ p {
 a,
 p {
   color: white;
-  font-size: 18px;
-  letter-spacing: 0.3px;
-  line-height: 1.8rem;
-  /* text-transform: uppercase; */
 }
 
 @media (hover: hover) {
