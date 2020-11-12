@@ -51,7 +51,12 @@ body {
 }
 
 p {
+<<<<<<< HEAD
   max-width: 580px;
+=======
+  max-width: 566px;
+  font-size: 24px;
+>>>>>>> parent of 9e31a0e... width tweak
   cursor: default;
   animation: loadIn 0.5s forwards linear 0.4s;
   -webkit-animation: loadIn 0.5s forwards linear 0.4s;
