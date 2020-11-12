@@ -22,23 +22,15 @@
 html {
   /* text-rendering: optimizeLegibility; */
   -webkit-font-smoothing: antialiased;
-  /* font-family: NBAkademie-Regular, sans-serif; */
 
   font-family: baskerville-urw, serif;
-  /* overflow: hidden; */
-  /* background: rgb(17, 17, 17); */
   background: #111;
-  /* background: black; */
   background-size: cover;
-  height: 100%;
   z-index: -1;
 }
 
 body {
-  min-height: 100vh;
   padding: 30px 30px 30px 30px;
-  height: 100%;
-  /* background: linear-gradient(122.18deg, #1d1d1d 8.01%, #0c0c0c 95.95%); */
   background: #111;
 }
 
@@ -100,7 +92,6 @@ a {
   bottom: 0;
   right: 0;
   overflow-x: hidden;
-  /* overflow-y: scroll; */
   pointer-events: none;
   min-height: 100vh;
 }
@@ -109,16 +100,12 @@ a {
   .ball {
     width: 1000px;
     height: 1000px;
-    /* background: rgb(204, 204, 204); */
-    /* background: radial-gradient(circle farthest-side, #dadada, #141414); */
     opacity: 50%;
     border: 1px solid rgb(255, 255, 255);
-    /* mix-blend-mode: difference; */
     border-radius: 50%;
     position: absolute;
-    /* margin: -10px 0 0 -10px; */
     pointer-events: none;
-    z-index: -1;
+    z-index: 10;
 
     -webkit-backface-visibility: hidden;
     -webkit-perspective: 1000;
@@ -130,13 +117,15 @@ a {
     transform: translateZ(0);
     /* filter: blur(50px);
   -webkit-filter: blur(50px); */
+    transition: 0.3s transform;
   }
 }
 
 .ballHighlighted {
   /* border: 1px solid rgb(224, 224, 224); */
-  opacity: 100%;
-  /* transition: 1s; */
+  opacity: 80%;
+  border: 2px solid rgba(255, 255, 255);
+  transform: scale(0.8);
 }
 
 footer {
