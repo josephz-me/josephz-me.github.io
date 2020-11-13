@@ -125,8 +125,8 @@ a {
 
 .ballHighlighted {
   /* border: 1px solid rgb(224, 224, 224); */
-  opacity: 80%;
-  border: 2px solid rgba(255, 255, 255);
+  opacity: 100%;
+  border: 3px solid rgba(255, 255, 255);
   transform: scale(0.8);
 }
 
