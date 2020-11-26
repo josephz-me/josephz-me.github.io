@@ -47,38 +47,24 @@ body {
   background: none;
 }
 
-p {
-  max-width: 613px;
-  font-size: 29px;
-  cursor: default;
-  animation: loadIn 0.5s forwards linear 0.4s;
-  -webkit-animation: loadIn 0.5s forwards linear 0.4s;
-  opacity: 0;
-  font-style: normal;
-  font-weight: 500;
-  font-style: normal;
-  letter-spacing: 0px;
-}
-
 a,
 p {
   color: white;
   line-height: 2.2rem;
 }
 
-/* @media (hover: hover) {
-  .bio a {
-    color: rgb(34, 34, 34, 0);
-
-    text-shadow: none;
-  }
-
-  .bio a:hover {
-    font-style: italic;
-    color: white;
-    text-shadow: 1px 1px rgb(34, 34, 34);
-  }
-} */
+p {
+  max-width: 613px;
+  font-size: 28px;
+  cursor: default;
+  animation: loadIn 0.5s forwards linear 0.4s;
+  -webkit-animation: loadIn 0.5s forwards linear 0.4s;
+  opacity: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+}
 
 a {
   font-style: italic;
@@ -87,10 +73,6 @@ a {
   font-size: 32px;
   letter-spacing: -0.2px;
   text-decoration: none;
-  /* background-image: linear-gradient(to bottom, white 33%, transparent 33%); */
-  background-position: 0 1.2em;
-  background-repeat: repeat-x;
-  background-size: 4px 4px;
   text-shadow: 1px 1px rgb(34, 34, 34);
 }
 
