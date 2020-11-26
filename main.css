@@ -184,21 +184,11 @@ footer a:hover {
 @media (max-width: 450px) {
   html {
     overflow: visible;
-    min-height: 120vh;
+    min-height: 100vh;
   }
 
   body {
-    padding: 80px 16px 16px 16px;
-  }
-
-  footer {
-    bottom: 30px;
-    right: 16px;
-    position: fixed;
-  }
-
-  .footer a:hover {
-    opacity: 0.1;
+    padding: 32px 16px 16px 16px;
   }
 
   .wrap {
@@ -217,7 +207,7 @@ footer a:hover {
   p {
     max-width: 600px;
     font-size: 23px;
-    letter-spacing: 0.03rem;
+    letter-spacing: 0.02rem;
   }
   a {
     font-size: 25px;
@@ -226,6 +216,17 @@ footer a:hover {
 
   a,
   p {
+    line-height: 1.8rem;
+  }
+
+  footer {
+    bottom: 30px;
+    right: 16px;
+    position: fixed;
+  }
+
+  footer a {
+    font-size: 20px;
     line-height: 1.8rem;
   }
 }
