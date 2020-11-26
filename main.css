@@ -10,9 +10,6 @@
   border: 0;
   outline: 0;
   vertical-align: baseline;
-  font-style: normal;
-  line-height: 1.8rem;
-  /* letter-spacing: 0.1px; */
 
   -webkit-user-drag: none;
   -khtml-user-drag: none;
@@ -25,24 +22,24 @@
 }
 
 html {
-  /* text-rendering: optimizeLegibility; */
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 
-  font-family: baskerville-urw, serif;
+  font-family: aktiv-grotesk, baskerville-urw, serif;
   background: #111;
   background-size: cover;
   z-index: -1;
 }
 
 body {
-  padding: 30px 30px 30px 30px;
+  padding: 60px 30px 30px 40px;
   background: #111;
 }
 
-::selection {
+/* ::selection {
   color: none;
   background: none;
-}
+} */
 /* For Mozilla Firefox */
 ::-moz-selection {
   color: none;
@@ -50,43 +47,55 @@ body {
 }
 
 p {
-  max-width: 550px;
-  font-size: 24px;
+  max-width: 630px;
+  font-size: 29px;
   cursor: default;
   animation: loadIn 0.5s forwards linear 0.4s;
   -webkit-animation: loadIn 0.5s forwards linear 0.4s;
   opacity: 0;
-  font-weight: 400;
   font-style: normal;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.5px;
 }
 
 a,
 p {
   color: white;
+  line-height: 2.2rem;
 }
 
-@media (hover: hover) {
+/* @media (hover: hover) {
   .bio a {
     color: rgb(34, 34, 34, 0);
-    text-decoration: none;
+
     text-shadow: none;
   }
 
   .bio a:hover {
-    /* font-style: italic; */
+    font-style: italic;
     color: white;
     text-shadow: 1px 1px rgb(34, 34, 34);
   }
-}
+} */
 
 a {
   font-style: italic;
+  font-family: "Times", Times, serif;
   text-decoration: none;
-  background-image: linear-gradient(to bottom, white 33%, transparent 33%);
+  font-size: 32px;
+  letter-spacing: -0.2px;
+  text-decoration: none;
+  /* background-image: linear-gradient(to bottom, white 33%, transparent 33%); */
   background-position: 0 1.2em;
   background-repeat: repeat-x;
   background-size: 4px 4px;
   text-shadow: 1px 1px rgb(34, 34, 34);
+}
+
+a:hover {
+  border-bottom: 2px solid white;
+  /* text-decoration: underline; */
 }
 
 .wrap {
@@ -140,20 +149,18 @@ footer {
   bottom: 30px;
   right: 30px;
   text-align: end;
-  font-size: 24px;
 }
 
 footer a {
-  text-decoration: none;
-  background-image: none;
   opacity: 10%;
-  display: block;
+  line-height: 2.1rem;
   margin-top: 8px;
-  /* transition: opacity 0.5s; */
+  font-size: 25px;
 }
 
 footer a:hover {
   opacity: 1;
+  border: none;
 }
 
 @keyframes loadIn {
@@ -181,12 +188,7 @@ footer a:hover {
   }
 
   body {
-    padding: 16px 16px 16px 16px;
-  }
-
-  p {
-    max-width: 600px;
-    font-size: 22px;
+    padding: 80px 16px 16px 16px;
   }
 
   footer {
@@ -212,9 +214,18 @@ footer a:hover {
     opacity: 100%;
   }
 
+  p {
+    max-width: 600px;
+    font-size: 23px;
+    letter-spacing: 0.03rem;
+  }
+  a {
+    font-size: 25px;
+    letter-spacing: 0.01rem;
+  }
+
   a,
   p {
-    letter-spacing: 0.03rem;
-    line-height: 1.4rem;
+    line-height: 1.8rem;
   }
 }
