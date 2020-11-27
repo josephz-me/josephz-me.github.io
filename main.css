@@ -141,6 +141,11 @@ footer a {
   font-size: 25px;
 }
 
+footer div {
+  opacity: 10% !important;
+  color: white;
+}
+
 footer a:hover {
   opacity: 1;
   border: none;
@@ -188,15 +193,11 @@ footer a:hover {
   }
   a {
     font-size: 25px;
-    letter-spacing: 0.01rem;
+    /* letter-spacing: 0.01rem; */
   }
 
   a,
   p {
     line-height: 1.8rem;
-  }
-
-  footer {
-    display: none;
   }
 }
