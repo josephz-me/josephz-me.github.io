@@ -188,16 +188,13 @@ footer a:hover {
 
   p {
     max-width: 600px;
-    font-size: 23px;
-    letter-spacing: 0.02rem;
-  }
-  a {
-    font-size: 25px;
-    /* letter-spacing: 0.01rem; */
+    font-size: 21px;
+    letter-spacing: 0rem;
+    line-height: 1.9rem;
   }
 
-  a,
-  p {
+  footer a {
+    font-size: 20px;
     line-height: 1.8rem;
   }
 }
