@@ -1,3 +1,5 @@
+<!-- Thanks for checking out my site. All video assets are rightfully owned. -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,7 +15,7 @@
 
     <meta
       name="keywords"
-      content="joseph, zhang, josephz, jospehz.me, jxsephz, art , design, carnegie mellon, design, cmu, cmu, design, ux design, art, graphic design, interaction design, apple"
+      content="joseph, zhang, josephz, josephz.me, jxsephz, art , design, carnegie mellon, design, design, ux design, art, graphic design, interaction design, apple"
     />
     <meta name="robots" content="index, follow" />
     <link rel="icon" href="circle.png" />
@@ -22,46 +24,53 @@
   </head>
   <body onload="followMouse();">
     <main>
-      <p>
-        <span class="bio">
-          Joseph is an interaction designer.
-          <!-- He is currently a student at the Carnegie Mellon
-          <a target="_blank" href="https://design.cmu.edu/">School of Design</a>
-          and
-          <a target="_blank" href="https://www.hcii.cmu.edu/"
-            >Human-Computer Interaction Institute</a
-          >. <br /><br />Previously at
-          <a target="_blank" href="https://www.apple.com/siri/">Apple</a>
-          [S’20], he now spends his time designing interfaces with
-          <a target="_blank" href="https://www.natural.ai"
-            >Brain Technologies</a
-          >
-          [F'20]. In an alternative life, he would like to be a furniture
-          designer or maybe a dog trainer. -->
-        </span>
-      </p>
+      <video class="thinkspace-video" autoplay playsinline loop muted>
+        <source src="public/thinkspace.mp4" type="video/mp4" />
+        Your browser does not support HTML video.
+      </video>
+      <video class="reading-trends-video" autoplay playsinline loop muted>
+        <source src="public/reading-trends.mp4" type="video/mp4" />
+        Your browser does not support HTML video.
+      </video>
+      <video class="other-video" autoplay playsinline loop muted>
+        <source src="public/other.mp4" type="video/mp4" />
+        Your browser does not support HTML video.
+      </video>
+
+      <video class="cv-video" autoplay playsinline loop muted>
+        <source src="public/cv.mp4" type="video/mp4" />
+        Your browser does not support HTML video.
+      </video>
+
+      <p class="bio">Joseph is an interaction designer.</p>
     </main>
 
     <footer>
-      <!-- <p></p> -->
-      <!-- <a
-        target="_blank"
-        href="https://www.notion.so/Design-Archives-93be304932f64d3eb2500d6903915ce4"
-        >Project Archives</a
-      > -->
       <a
+        class="thinkspace"
         target="_blank"
         href="https://medium.com/swlh/if-conversational-assistants-could-enhance-human-conversation-2cfb048cfc60"
         >Thinkspace</a
       ><br />
-      <a target="_blank" href="https://www.josephz.me/reading-trends"
+      <a
+        class="reading-trends"
+        target="_blank"
+        href="https://www.josephz.me/reading-trends"
         >Reading Trends</a
       ><br />
-      <a target="_blank" href="https://design-portfolio-ft809uunh.vercel.app/"
+      <a
+        class="other"
+        target="_blank"
+        href="https://design-portfolio-ft809uunh.vercel.app/"
         >Other</a
       >
       <div>—</div>
-      <a target="_blank" href="https://www.linkedin.com/in/josephzme/">CV</a>
+      <a
+        class="cv"
+        target="_blank"
+        href="https://www.linkedin.com/in/josephzme/"
+        >CV</a
+      >
     </footer>
 
     <div class="wrap">
@@ -73,8 +82,9 @@
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"
   ></script>
-  <script src="script/landing.js"></script>
-  <script src="script/description.js"></script>
+
+  <script src="script/ball.js"></script>
+  <script src="script/imageHover.js"></script>
   <script>
     jQuery(function ($) {
       $("a").hover(
