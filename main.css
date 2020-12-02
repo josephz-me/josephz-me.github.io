@@ -30,7 +30,7 @@ html {
   background: rgb(8, 8, 8);
   /* background: rgb(10, 10, 10); */
   background-size: cover;
-  z-index: -1;
+  overflow: hidden;
 }
 
 body {
