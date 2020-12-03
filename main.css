@@ -200,10 +200,6 @@ footer div {
 }
 
 @media (max-width: 450px) {
-  html {
-    overflow: visible;
-  }
-
   body {
     padding: 32px 16px 16px 16px;
   }
