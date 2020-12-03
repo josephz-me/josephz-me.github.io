@@ -146,6 +146,14 @@ video {
   }
 }
 
+@media (hover: none) and (pointer: coarse) {
+  .other-video {
+    animation: lowLoadIn 0.5s forwards linear 0.4s;
+    -webkit-animation: lowLoadIn 0.5s forwards linear 0.4s;
+    opacity: 0;
+  }
+}
+
 .ballHighlighted {
   /* border: 1px solid rgb(224, 224, 224); */
   opacity: 100%;
@@ -227,11 +235,5 @@ footer div {
     font-size: 20px;
     line-height: 1.8rem;
     opacity: 0.4;
-  }
-
-  .other-video {
-    animation: lowLoadIn 0.5s forwards linear 0.4s;
-    -webkit-animation: lowLoadIn 0.5s forwards linear 0.4s;
-    opacity: 0;
   }
 }
