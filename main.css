@@ -77,12 +77,6 @@ a {
   font-size: 32px;
   letter-spacing: -0.2px;
   text-decoration: none;
-  text-shadow: 1px 1px rgb(34, 34, 34);
-}
-
-a:hover {
-  border-bottom: 2px solid white;
-  /* text-decoration: underline; */
 }
 
 video {
@@ -145,6 +139,11 @@ video {
     animation: ballLoadIn 0.5s forwards linear 0.8s;
     -webkit-animation: ballLoadIn 0.5s forwards linear 0.8s;
   }
+
+  footer a:hover {
+    opacity: 1;
+    border: none;
+  }
 }
 
 .ballHighlighted {
@@ -169,13 +168,8 @@ footer a {
 }
 
 footer div {
-  opacity: 20%;
+  opacity: 15%;
   color: white;
-}
-
-footer a:hover {
-  opacity: 1;
-  border: none;
 }
 
 @keyframes loadIn {
@@ -184,6 +178,15 @@ footer a:hover {
   }
   100% {
     opacity: 0.85;
+  }
+}
+
+@keyframes lowLoadIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.35;
   }
 }
 
@@ -205,9 +208,9 @@ footer a:hover {
     padding: 32px 16px 16px 16px;
   }
 
-  video {
+  /* video {
     display: none;
-  }
+  } */
 
   .wrap {
     display: none;
@@ -227,5 +230,12 @@ footer a:hover {
   footer a {
     font-size: 20px;
     line-height: 1.8rem;
+    opacity: 0.4;
+  }
+
+  .other-video {
+    animation: lowLoadIn 0.5s forwards linear 0.4s;
+    -webkit-animation: lowLoadIn 0.5s forwards linear 0.4s;
+    opacity: 0;
   }
 }
