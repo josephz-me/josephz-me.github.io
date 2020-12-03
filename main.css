@@ -147,6 +147,10 @@ video {
 }
 
 @media (hover: none) and (pointer: coarse) {
+  html {
+    overflow: visible;
+  }
+
   .other-video {
     animation: lowLoadIn 0.5s forwards linear 0.4s;
     -webkit-animation: lowLoadIn 0.5s forwards linear 0.4s;
@@ -211,10 +215,6 @@ footer div {
   body {
     padding: 32px 16px 16px 16px;
   }
-
-  /* video {
-    display: none;
-  } */
 
   .wrap {
     display: none;
