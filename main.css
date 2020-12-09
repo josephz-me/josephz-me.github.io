@@ -70,11 +70,14 @@ footer {
   opacity: 0;
 }
 
-a {
+footer a {
+  opacity: 15%;
+  line-height: 1.9rem;
+  margin-top: 8px;
+  font-size: 23px;
   font-style: italic;
   font-family: "Times", Times, serif;
   text-decoration: none;
-  font-size: 32px;
   letter-spacing: -0.2px;
   text-decoration: none;
 }
@@ -170,13 +173,6 @@ footer {
   bottom: 30px;
   right: 30px;
   text-align: end;
-}
-
-footer a {
-  opacity: 15%;
-  line-height: 1.9rem;
-  margin-top: 8px;
-  font-size: 23px;
 }
 
 footer div {
