@@ -48,19 +48,28 @@ body {
 }
 
 a,
-p {
+p,
+span {
   color: white;
   line-height: 2.2rem;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+a {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+a:hover {
+  opacity: 1;
 }
 
 p {
-  max-width: 640px;
-  font-size: 26px;
+  max-width: 500px;
   cursor: default;
-  font-style: normal;
-  font-weight: 500;
-  font-style: normal;
-  letter-spacing: 0px;
 }
 
 p,
@@ -70,16 +79,17 @@ footer {
   opacity: 0;
 }
 
-footer a {
+footer a,
+span {
   opacity: 15%;
   line-height: 1.9rem;
-  margin-top: 8px;
+  /* margin-top: 8px;
   font-size: 23px;
   font-style: italic;
   font-family: "Times", Times, serif;
   text-decoration: none;
   letter-spacing: -0.2px;
-  text-decoration: none;
+  text-decoration: none; */
 }
 
 video {
@@ -95,10 +105,6 @@ video {
   transition: opacity 0.2s, transform 0.1s;
   transform: scale(1);
 }
-
-/* .bio {
-  z-index: 5;
-} */
 
 .show {
   opacity: 0.5;
@@ -120,6 +126,7 @@ video {
 @media (hover: hover) {
   .ball {
     width: 1000px;
+
     height: 1000px;
     opacity: 0%;
     border: 1px solid rgb(255, 255, 255);
@@ -220,16 +227,17 @@ footer div {
     display: none;
   }
 
-  p {
-    max-width: 600px;
+  p,
+  a,
+  span {
     font-size: 21px;
     letter-spacing: 0rem;
     line-height: 1.9rem;
   }
 
-  footer a {
+  /* footer a {
     font-size: 20px;
     line-height: 1.8rem;
     opacity: 0.4;
-  }
+  } */
 }
