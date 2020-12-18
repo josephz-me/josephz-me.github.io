@@ -22,8 +22,8 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="https://use.typekit.net/srk5tly.css" />
   </head>
-  <body>
-    <!-- <body onload="followMouse();"> -->
+
+  <body onload="followMouse();">
     <main>
       <video class="thinkspace-video" playsinline loop muted>
         <source src="public/thinkspace.mp4" type="video/mp4" />
@@ -115,9 +115,9 @@
       <!-- <div class="dash">—</div> -->
     </footer>
 
-    <!-- <div class="wrap">
+    <div class="wrap">
       <div class="ball"></div>
-    </div> -->
+    </div>
   </body>
   <script
     src="https://code.jquery.com/jquery-3.5.1.js"
@@ -125,18 +125,18 @@
     crossorigin="anonymous"
   ></script>
 
-  <!-- <script src="script/ball.js"></script> -->
+  <script src="script/ball.js"></script>
   <script src="script/imageHover.js"></script>
   <script>
-    // jQuery(function ($) {
-    //   $("a").hover(
-    //     function () {
-    //       $(".ball").addClass("ballHighlighted");
-    //     },
-    //     function () {
-    //       $(".ball").removeClass("ballHighlighted");
-    //     }
-    //   );
-    // });
+    jQuery(function ($) {
+      $("a").hover(
+        function () {
+          $(".ball").addClass("ballHighlighted");
+        },
+        function () {
+          $(".ball").removeClass("ballHighlighted");
+        }
+      );
+    });
   </script>
 </html>
