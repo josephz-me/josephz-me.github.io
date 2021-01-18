@@ -37,6 +37,13 @@ body {
   padding: 60px 30px 30px 40px;
 }
 
+footer {
+  position: absolute;
+  left: 55px;
+  bottom: 30px;
+  cursor: default;
+}
+
 ::selection {
   color: none;
   background: none;
@@ -69,8 +76,15 @@ a:hover {
 }
 
 p {
-  max-width: 500px;
   cursor: default;
+}
+
+.education {
+  max-width: 500px;
+}
+
+.landing {
+  max-width: 540px;
 }
 
 .projects a {
@@ -202,25 +216,9 @@ img {
   .ball {
     display: none;
   }
-  /* 
-  p,
-  a,
-  span {
-    font-size: 21px;
-    letter-spacing: 0rem;
-    line-height: 1.9rem;
-  } */
 
-  /* footer a {
-    font-size: 20px;
-    line-height: 1.8rem;
-    opacity: 0.4;
-  } */
-
-  /* footer {
-    position: absolute;
+  footer {
+    left: 29px;
     bottom: 20px;
-    right: 20px;
-    text-align: end;
-  } */
+  }
 }
