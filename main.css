@@ -221,4 +221,12 @@ img {
     left: 14px;
     bottom: 20px;
   }
+
+  a,
+  p,
+  span {
+    line-height: 1.6rem;
+    font-size: 17px;
+    letter-spacing: 0rem;
+  }
 }
