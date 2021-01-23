@@ -1,6 +1,7 @@
 jQuery(function ($) {
   //touch screen experience
   let fileName = location.href.split("/").slice(-1)[0];
+
   if (
     ("ontouchstart" in window || !"ontouch" in window) &&
     fileName !== "expanded.html"
@@ -13,7 +14,7 @@ jQuery(function ($) {
     $("a").hover(
       function (data) {
         let className = data.currentTarget.className;
-        console.log(className);
+
         if ($(`.${className}-video`).length === 1) {
           $(`.${className}-video`).trigger("play");
           $(`.${className}-video`).addClass("show");

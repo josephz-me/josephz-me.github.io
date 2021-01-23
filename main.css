@@ -80,7 +80,7 @@ p {
 }
 
 .education {
-  max-width: 500px;
+  max-width: 550px;
 }
 
 .landing {
@@ -161,7 +161,7 @@ img {
     overflow: visible;
   }
 
-  .thinkspace-video {
+  .index .thinkspace-video {
     animation: lowLoadIn 0.5s forwards linear 0.4s;
     -webkit-animation: lowLoadIn 0.5s forwards linear 0.4s;
     opacity: 0;
