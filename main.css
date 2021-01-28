@@ -219,7 +219,9 @@ img {
 
   footer {
     left: 14px;
-    bottom: 20px;
+    position: static;
+    margin-top: 120px;
+    /* bottom: 20px; */
   }
 
   a,
