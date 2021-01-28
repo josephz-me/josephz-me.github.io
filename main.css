@@ -30,7 +30,6 @@ html {
 
   background: rgb(8, 8, 8);
   background-size: cover;
-  overflow: hidden;
 }
 
 body {
@@ -79,13 +78,14 @@ p {
   cursor: default;
 }
 
-.education {
-  max-width: 600px;
+.education,
+.landing {
+  max-width: 560px;
 }
 
-.landing {
-  max-width: 550px;
-}
+/* .landing {
+  max-width: 530px;
+} */
 
 .indent a {
   margin-left: 15px;
