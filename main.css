@@ -37,7 +37,7 @@ body {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   left: 40px;
   bottom: 30px;
   cursor: default;
@@ -91,7 +91,7 @@ p {
   margin-left: 15px;
 }
 
-/* .landing p {
+/* .landing p {}
   animation: loadIn 0.5s forwards linear 0.4s;
   -webkit-animation: loadIn 0.5s forwards linear 0.4s;
   opacity: 0;
