@@ -110,11 +110,13 @@ img {
   transition: opacity 0.2s, transform 0.1s;
   transform: scale(1);
   pointer-events: none;
+  visibility: visible;
 }
 
 .show {
   opacity: 0.5;
-  transform: scale(1.02);
+  visibility: visible;
+  /* transform: scale(1.02); */
 }
 
 .wrap {
