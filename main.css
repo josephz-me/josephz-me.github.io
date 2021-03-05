@@ -39,7 +39,7 @@ body {
 .row {
   display: grid;
   opacity: 0;
-  grid-template-columns: 200px 520px;
+  grid-template-columns: 200px 510px;
   margin-bottom: 58px;
   animation: loadIn 2s 1s forwards;
 }
@@ -67,7 +67,7 @@ body {
   .row {
     grid-template-columns: 1fr;
     row-gap: 15px;
-    max-width: 520px;
+    max-width: 510px;
   }
 }
 
@@ -90,11 +90,12 @@ p,
 span {
   color: white;
   line-height: 1.6rem;
-  font-size: 18px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0rem;
   z-index: 10;
+  width: auto;
 }
 
 a {
