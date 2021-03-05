@@ -131,7 +131,7 @@ img {
 }
 
 .show {
-  opacity: 0.2;
+  opacity: 0.4;
   visibility: visible;
   /* transform: scale(1.02); */
 }
