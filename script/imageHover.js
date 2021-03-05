@@ -2,12 +2,8 @@ jQuery(function ($) {
   //touch screen experience
   let fileName = location.href.split("/").slice(-1)[0];
 
-  if (
-    ("ontouchstart" in window || !"ontouch" in window) &&
-    fileName !== "expanded.html"
-  ) {
-    let desiredVideo = "thinkspace";
-    $(`.${desiredVideo}-video`).trigger("play");
+  if ("ontouchstart" in window || !"ontouch" in window) {
+    return;
   }
   //on desktop
   else {

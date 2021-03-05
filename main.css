@@ -36,11 +36,39 @@ body {
   padding: 60px 30px 30px 40px;
 }
 
-footer {
-  position: fixed;
-  left: 40px;
-  bottom: 30px;
-  cursor: default;
+.row {
+  display: grid;
+  opacity: 0;
+  grid-template-columns: 200px 520px;
+  margin-bottom: 58px;
+  animation: loadIn 2s 1s forwards;
+}
+
+.row:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.row:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.row:nth-child(3) {
+  animation-delay: 0.7s;
+}
+.row:last-child {
+  margin-bottom: 0px;
+  animation-delay: 0.8s;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 800px) {
+  .row {
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    max-width: 520px;
+  }
 }
 
 ::selection {
@@ -51,6 +79,10 @@ footer {
 ::-moz-selection {
   color: none;
   background: none;
+}
+
+.indent {
+  margin-right: 28px;
 }
 
 a,
@@ -78,28 +110,13 @@ p {
   cursor: default;
 }
 
-.education,
-.landing {
-  max-width: 560px;
+.experience {
+  margin-bottom: 24px;
 }
-
-/* .landing {
-  max-width: 530px;
-} */
-
-.indent a {
-  margin-left: 15px;
-}
-
-/* .landing p {}
-  animation: loadIn 0.5s forwards linear 0.4s;
-  -webkit-animation: loadIn 0.5s forwards linear 0.4s;
-  opacity: 0;
-} */
 
 video,
 img {
-  position: absolute;
+  position: fixed;
   opacity: 0;
   top: 0;
   left: 0;
@@ -114,7 +131,7 @@ img {
 }
 
 .show {
-  opacity: 0.5;
+  opacity: 0.2;
   visibility: visible;
   /* transform: scale(1.02); */
 }
@@ -158,20 +175,6 @@ img {
   }
 }
 
-@media (hover: none) and (pointer: coarse) {
-  html {
-    overflow: visible;
-  }
-
-  .index .thinkspace-video {
-    animation: lowLoadIn 0.5s forwards linear 0.4s;
-    -webkit-animation: lowLoadIn 0.5s forwards linear 0.4s;
-    opacity: 0;
-    margin-left: 0;
-    object-position: 80%;
-  }
-}
-
 .ballHighlighted {
   /* border: 1px solid rgb(224, 224, 224); */
   opacity: 100%;
@@ -185,15 +188,6 @@ img {
   }
   100% {
     opacity: 0.85;
-  }
-}
-
-@keyframes lowLoadIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.35;
   }
 }
 
@@ -222,7 +216,7 @@ img {
   footer {
     left: 14px;
     position: static;
-    margin-top: 120px;
+    margin-top: 0px;
     margin-bottom: 25px;
     /* bottom: 20px; */
   }
