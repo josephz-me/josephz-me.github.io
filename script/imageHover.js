@@ -25,6 +25,7 @@ jQuery(function ($) {
           $(`.${className}-video`).removeClass("show");
         } else {
           $(`.${className}-img`).removeClass("show");
+          gt;
         }
       }
     );
