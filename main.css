@@ -28,35 +28,45 @@ html {
   font-family: aktiv-grotesk, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-  background: rgba(8, 8, 8, 1);
+  background: white;
   background-size: cover;
 }
 
 body {
-  padding: 60px 30px 30px 40px;
+  /* padding: 60px 30px 30px 40px; */
   min-height: 100vh;
 }
 
+.landing {
+  padding: 60px 30px 30px 40px;
+  display: grid;
+  grid-template-columns: 700px 1fr;
+  column-gap: 40px;
+}
+
+.row-container {
+  grid-column-start: 1;
+}
 .row {
   display: grid;
   opacity: 0;
-  grid-template-columns: 200px 510px;
+  grid-template-columns: 170px 490px;
   margin-bottom: 58px;
-  animation: loadIn 2s 1s forwards;
+  animation: loadIn 1s 1s forwards;
 }
 
 .row:nth-child(1) {
   animation-delay: 0.5s;
 }
 .row:nth-child(2) {
-  animation-delay: 0.6s;
+  animation-delay: 0.55s;
 }
 .row:nth-child(3) {
-  animation-delay: 0.7s;
+  animation-delay: 0.6s;
 }
 .row:last-child {
   margin-bottom: 0px;
-  animation-delay: 0.8s;
+  animation-delay: 0.65s;
 }
 
 .projects {
@@ -69,6 +79,10 @@ body {
     grid-template-columns: 1fr;
     row-gap: 15px;
     max-width: 510px;
+  }
+
+  .landing {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -89,23 +103,26 @@ body {
 a,
 p,
 span {
-  color: white;
+  color: #111111;
   line-height: 1.6rem;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0rem;
-  z-index: 10;
+  z-index: 0;
   width: auto;
 }
 
 a {
   text-decoration: none;
-  opacity: 0.7;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: background-color 0.1s;
+  background: rgba(245, 245, 245, 0);
 }
 
 a:hover {
   opacity: 1;
+  background: rgba(245, 245, 245);
 }
 
 p {
@@ -116,7 +133,7 @@ p {
   margin-bottom: 24px;
 }
 
-video,
+/* video,
 img {
   position: fixed;
   opacity: 0;
@@ -130,6 +147,31 @@ img {
   transform: scale(1);
   pointer-events: none;
   visibility: visible;
+} */
+
+.media {
+  grid-column-start: 2;
+  width: 100%;
+  position: relative;
+}
+.hoverCard {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  object-fit: cover;
+  /* transform: translate(60%, -50%); */
+  z-index: 100 !important;
+  pointer-events: none;
+  opacity: 0;
+  border-radius: 2px;
+  transform: scale(0.95);
+  transition: 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+.showHoverCard {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .show {
@@ -189,7 +231,7 @@ img {
     opacity: 0;
   }
   100% {
-    opacity: 0.85;
+    opacity: 1;
   }
 }
 
