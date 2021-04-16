@@ -50,9 +50,9 @@ body {
 .row {
   display: grid;
   opacity: 0;
-  grid-template-columns: 170px 490px;
+  grid-template-columns: 170px 1fr;
   margin-bottom: 58px;
-  animation: loadIn 1s 1s forwards;
+  animation: loadIn 0.8s 1s forwards;
 }
 
 .row:nth-child(1) {
@@ -104,11 +104,11 @@ a,
 p,
 span {
   color: #111111;
-  line-height: 1.6rem;
+  line-height: 1.5em;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 0rem;
+  letter-spacing: 0em;
   z-index: 0;
   width: auto;
 }
@@ -158,15 +158,27 @@ img {
   width: 100%;
   height: auto;
   position: absolute;
-  object-fit: cover;
-  /* transform: translate(60%, -50%); */
+
   z-index: 100 !important;
   pointer-events: none;
   opacity: 0;
-  border-radius: 2px;
   transform: scale(0.95);
   transition: 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hoverCard video,
+.hoverCard img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 2px;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+.hoverCard p {
+  margin-top: 5px;
+  font-size: 15px;
+  opacity: 0.5;
 }
 
 .showHoverCard {
@@ -177,7 +189,6 @@ img {
 .show {
   opacity: 0.4;
   visibility: visible;
-  /* transform: scale(1.02); */
 }
 
 .wrap {
@@ -192,40 +203,6 @@ img {
   min-height: 100vh;
 }
 
-@media (hover: hover) {
-  .ball {
-    width: 1000px;
-
-    height: 1000px;
-    opacity: 0%;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 50%;
-    position: absolute;
-    pointer-events: none;
-    z-index: 10;
-
-    -webkit-backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-transform: translateZ(0);
-    backface-visibility: hidden;
-    perspective: 1000;
-    transform: translate3d(0, 0, 0);
-    transform: translateZ(0);
-
-    transition: 0.3s transform;
-    animation: ballLoadIn 0.5s forwards linear 0.8s;
-    -webkit-animation: ballLoadIn 0.5s forwards linear 0.8s;
-  }
-}
-
-.ballHighlighted {
-  /* border: 1px solid rgb(224, 224, 224); */
-  opacity: 100%;
-  border: 3px solid rgba(255, 255, 255);
-  transform: scale(0.8);
-}
-
 @keyframes loadIn {
   0% {
     opacity: 0;
@@ -235,15 +212,11 @@ img {
   }
 }
 
-@keyframes ballLoadIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.5;
+@media (max-width: 1000px) {
+  .landing {
+    column-gap: 10px;
   }
 }
-
 @media (max-width: 450px) {
   .landing {
     padding: 32px 14px 14px 14px;
