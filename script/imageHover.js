@@ -11,11 +11,16 @@ jQuery(function ($) {
     $("a").hover(
       function (data) {
         className = data.currentTarget.className;
-        desiredMedia = $(`.${className}.hoverCard video`);
-        $(`.${className}.hoverCard`).addClass("showHoverCard");
-        desiredMedia.trigger("play");
+        if (className !== "indent") {
+          desiredMedia = $(`.${className}.hoverCard video`);
+          $(".portrait").addClass("hide");
+
+          $(`.${className}.hoverCard`).addClass("showHoverCard");
+          desiredMedia.trigger("play");
+        }
       },
       function () {
+        $(".portrait").removeClass("hide");
         $(`.${className}.hoverCard`).removeClass("showHoverCard");
         console.log(desiredMedia);
         desiredMedia.trigger("pause");

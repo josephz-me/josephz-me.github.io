@@ -141,20 +141,33 @@ img {
   width: 100%;
   position: relative;
 }
-.hoverCard {
-  width: 100%;
-  height: auto;
-  position: absolute;
 
+.portrait-container {
+  opacity: 0;
+  animation: loadIn 0.8s 1s forwards;
+  transition: 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-delay: 0.7s;
+}
+
+.hoverCard,
+.portrait {
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  position: absolute;
   z-index: 100 !important;
   pointer-events: none;
-  opacity: 0;
-  transform: scale(0.95);
+  transform: scale(1);
   transition: 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-video,
-img {
+.hoverCard {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.media video,
+.media img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -162,7 +175,7 @@ img {
   max-height: 90vh;
 }
 
-.hoverCard p {
+.media p {
   margin-top: 5px;
   font-size: 15px;
   opacity: 0.5;
@@ -177,6 +190,11 @@ img {
 .show {
   opacity: 0.4;
   visibility: visible;
+}
+
+.hide {
+  transform: scale(0.95);
+  opacity: 0;
 }
 
 .wrap {
