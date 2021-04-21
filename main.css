@@ -218,9 +218,9 @@ img {
   }
 }
 
-@media (max-width: 1000px) {
-  .landing {
-    column-gap: 10px;
+@media (max-width: 950px) {
+  .media {
+    display: none;
   }
 }
 
@@ -233,10 +233,6 @@ img {
 
   .landing {
     grid-template-columns: 1fr;
-  }
-
-  .media {
-    display: none;
   }
 }
 
