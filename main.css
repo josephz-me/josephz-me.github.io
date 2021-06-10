@@ -144,7 +144,7 @@ img {
 
 .portrait-container {
   opacity: 0;
-  animation: loadIn 0.8s 1s forwards;
+  /* animation: loadIn 0.8s 1s forwards; */
   transition: 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   animation-delay: 0.7s;
 }
