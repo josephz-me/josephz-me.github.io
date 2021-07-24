@@ -4,6 +4,10 @@
   src: url("iAWriterMonoS-Regular.ttf");
 } */
 
+:root{
+  --primary: rgba(255, 255, 255, 1);
+  --secondary: rgba(0, 0, 0, .85);
+}
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +33,7 @@ html {
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
 
-  background: rgba(255, 255, 255, 1);
+  background: var(--secondary);
   background-size: cover;
 }
 
@@ -51,7 +55,7 @@ body {
 .row {
   display: grid;
   opacity: 0;
-  grid-template-columns: 170px 1fr;
+  grid-template-columns: 180px 1fr;
   margin-bottom: 58px;
   animation: loadIn 0.8s 1s forwards;
 }
@@ -92,7 +96,7 @@ body {
 a,
 p,
 span {
-  color: #111111;
+  color: var(--primary);
   line-height: 1.5em;
   font-size: 17px;
   font-style: normal;
@@ -104,7 +108,7 @@ span {
 
 a {
   text-decoration: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255,255,255,.2);
 }
 
 a:hover {
@@ -171,7 +175,7 @@ img {
   width: 100%;
   height: auto;
   object-fit: cover;
-  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 200px rgba(255, 255, 255, 0.05);
   max-height: 90vh;
 }
 
