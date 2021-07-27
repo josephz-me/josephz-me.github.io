@@ -169,7 +169,7 @@ img {
 
 .hoverCard video, .hoverCard img {
   border: .5px solid var(--primary-underline);
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .hoverCard {
