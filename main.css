@@ -6,6 +6,7 @@
 
 :root{
   --primary: rgba(255, 255, 255, 1);
+  --primary-underline: rgba(255,255,255,.2);
   --secondary: rgba(0, 0, 0, .85);
 }
 * {
@@ -108,7 +109,7 @@ span {
 
 a {
   text-decoration: none;
-  border-bottom: 1px solid rgba(255,255,255,.2);
+  border-bottom: 1px solid var(--primary-underline);
 }
 
 a:hover {
@@ -163,6 +164,12 @@ img {
   pointer-events: none;
   transform: scale(1);
   transition: 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* border: 1px solid var(--primary); */
+}
+
+.hoverCard video, .hoverCard img {
+  border: .5px solid var(--primary-underline);
+  border-radius: 30px;
 }
 
 .hoverCard {
