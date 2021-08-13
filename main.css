@@ -46,7 +46,7 @@ body {
 .landing {
   padding: 60px 30px 30px 40px;
   display: grid;
-  grid-template-columns: 700px 1fr;
+  grid-template-columns: 710px 1fr;
   column-gap: 40px;
 }
 
