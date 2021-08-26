@@ -4,10 +4,10 @@
   src: url("iAWriterMonoS-Regular.ttf");
 } */
 
-:root{
+:root {
   --primary: rgba(255, 255, 255, 1);
-  --primary-underline: rgba(255,255,255,.2);
-  --secondary: rgba(0, 0, 0, .85);
+  --primary-underline: rgba(255, 255, 255, 0.2);
+  --secondary: rgba(0, 0, 0, 0.85);
 }
 * {
   margin: 0;
@@ -46,7 +46,7 @@ body {
 .landing {
   padding: 60px 30px 30px 40px;
   display: grid;
-  grid-template-columns: 700px 1fr;
+  grid-template-columns: 730px 1fr;
   column-gap: 40px;
 }
 
@@ -167,8 +167,9 @@ img {
   /* border: 1px solid var(--primary); */
 }
 
-.hoverCard video, .hoverCard img {
-  border: .5px solid var(--primary-underline);
+.hoverCard video,
+.hoverCard img {
+  border: 0.5px solid var(--primary-underline);
   border-radius: 10px;
 }
 
