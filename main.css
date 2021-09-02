@@ -31,12 +31,12 @@ html {
 .landing {
   padding: 60px 30px 30px 40px;
   display: grid;
-  grid-template-columns: 550px 1fr;
+  grid-template-columns: 530px 1fr;
   column-gap: 40px;
 }
 .about {
   grid-column-start: 1;
-  width: 540px;
+  width: 495px;
   position: fixed;
 }
 
@@ -84,7 +84,8 @@ a {
   border-bottom: 1px solid var(--primary-underline);
 }
 
-.about a:hover {
+.about a:hover,
+footer a:hover {
   opacity: 0.6;
 }
 
