@@ -9,7 +9,7 @@
 :root {
   --primary: rgba(255, 255, 255, 1);
   --primary-underline: rgba(255, 255, 255, 0.2);
-  --secondary: rgba(0, 0, 0, 0.85);
+  --secondary: rgba(50, 50, 50, 1);
 }
 
 .hoverCard span {
@@ -101,7 +101,8 @@ p {
 .media {
   grid-column-start: 2;
   width: 100%;
-  margin-top: 40px;
+
+  /* margin-top: 40px; */
   /* position: relative; */
 }
 
