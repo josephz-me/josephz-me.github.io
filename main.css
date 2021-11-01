@@ -209,7 +209,7 @@ figure:hover {
 
 .hoverCard:hover > img, .hoverCard:hover > video{
   box-shadow: 0 0 100x rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255,255,255, .8);
+  border: 1px solid rgba(255,255,255, .5);
 }
 
 .hoverCard:hover > span{
