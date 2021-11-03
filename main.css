@@ -23,6 +23,8 @@
   --caption-size: 14px;
   --caption-letter-spacing: 0.02em;
   --bg: #111111;
+
+  --mobile-size: 15px;
 }
 
 .hoverCard span {
@@ -83,13 +85,6 @@ b {
 
 b{
   font-weight: 600;
-  color: var(--body-color);
-  line-height: var(--body-line-height);
-  font-size: var(--body-size);
-  font-style: normal;
-  letter-spacing: var(--body-letter-spacing);
-  z-index: 0;
-  width: auto;
 }
 
 
@@ -263,10 +258,10 @@ footer {
 
   a,
   p,
-  span,
-  b {
+  span
+  {
     line-height: 1.4em;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 0em;
   }
 }
