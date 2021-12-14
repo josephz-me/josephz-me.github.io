@@ -8,7 +8,8 @@
 
 :root {
   --primary: rgba(255, 255, 255, 1);
-  --primary-underline-inactive: rgba(255, 255, 255, 0.1);
+  --primary-underline-inactive: rgba(255, 255, 255, 0.2);
+  --image-border-inactive: rgba(255,255,255,.1);
   --primary-underline-active: rgba(255, 255, 255, .5);
   --secondary: rgba(50, 50, 50, 1);
 
@@ -52,7 +53,7 @@ html {
 }
 .about {
   grid-column-start: 1;
-  width: 495px;
+  width: 510px;
   position: fixed;
 }
 
@@ -193,7 +194,7 @@ figure:hover {
 
 .hoverCard video,
 .hoverCard img {
-  border: 1px solid var(--primary-underline-inactive);
+  border: 1px solid var(--image-border-inactive);
   border-radius: 10px;
   display: block;
   width: 100%;
