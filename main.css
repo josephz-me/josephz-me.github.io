@@ -29,7 +29,7 @@
   --mobile-letter-spacing: 0.03em;
 }
 
-.hoverCard span {
+.hoverCard small {
   display: inline-block;
   padding-top: 3px;
 }
@@ -95,7 +95,7 @@ a {
   border-bottom: 1px solid var(--primary-underline-inactive);
 }
 
-span{
+small{
   font-size: var(--caption-size);
   color: var(--body-color);
   line-height: var(--body-line-height);
@@ -108,7 +108,7 @@ span{
   opacity: 0.5;
 }
 
-span b{
+small b{
   font-size: var(--caption-size);
 }
 
@@ -209,7 +209,7 @@ figure:hover {
   border: 1px solid rgba(255,255,255, .5);
 }
 
-.hoverCard:hover > span{
+.hoverCard:hover > small{
   opacity: .9;
 }
 
@@ -259,11 +259,16 @@ footer {
   }
 
   a,
-  p,
-  span
+  p
   {
     line-height: 1.4em;
     font-size: var(--mobile-size);
     letter-spacing: var(--mobile-letter-spacing);
+  }
+
+  small, small b{
+    font-size: var(--caption-size);
+    letter-spacing: var(--caption-letter-spacing);
+    line-height: 1.4em;
   }
 }
