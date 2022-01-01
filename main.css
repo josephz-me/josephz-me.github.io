@@ -53,7 +53,7 @@ html {
 }
 .about {
   grid-column-start: 1;
-  width: 510px;
+  width: 515px;
   position: fixed;
 }
 
