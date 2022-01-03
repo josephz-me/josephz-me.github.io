@@ -8,17 +8,17 @@
 
 :root {
 
-  --fg: 255;
-  --bg-shade: .9;
-  --background-secondary: 50;
-  
+  --foreground: rgb(255,255,255);
+  --background: rgba(0,0,0);
+
   /* DARKMODE */
-  --fg-100: rgba(var(--fg), var(--fg), var(--fg), 1);
-  --fg-90: rgba(var(--fg),var(--fg),var(--fg), 0.9);
-  --fg-50: rgba(var(--fg), var(--fg), var(--fg), 0.5);
-  --fg-30: rgba(var(--fg), var(--fg), var(--fg), 0.3);
-  --fg-10: rgba(var(--fg),var(--fg),var(--fg), 0.1);
-  --bg: rgba(0,0,0, var(--bg-shade));
+  --bg: #111111;
+  --primary: rgba(255, 255, 255, 1);
+  --body-color: rgba(255,255,255,.9);
+  --primary-underline-active: rgba(255, 255, 255, .5);
+  --primary-underline-inactive: rgba(255, 255, 255, 0.2);
+  --image-border-inactive: rgba(255,255,255,.1);
+  --secondary: rgba(50, 50, 50, 1);
 
   --h3-size: 17px;
 
@@ -27,11 +27,9 @@
   --body-size: 15px;
   --body-letter-spacing: 0.02em;
   
-
   --caption-size: 14px;
   --caption-letter-spacing: 0.02em;
-
-
+  
   --mobile-size: 15px;
   --mobile-letter-spacing: 0.03em;
 }
@@ -82,7 +80,8 @@ html {
 a,
 p,
 b {
-  color: var(--fg-90);
+  color: var(--body-color);
+  
   line-height: var(--body-line-height);
   font-size: var(--body-size);
   font-style: normal;
@@ -99,12 +98,12 @@ b{
 
 a {
   text-decoration: none;
-  border-bottom: 1px solid var(--fg-20);
+  border-bottom: 1px solid var(--primary-underline-inactive);
 }
 
 small{
   font-size: var(--caption-size);
-  color: var(--fg-90);
+  color: var(--body-color);
   line-height: var(--body-line-height);
   letter-spacing: var(--caption-letter-spacing);
   font-style: normal;
@@ -121,8 +120,8 @@ small b{
 
 .about a:hover,
 footer a:hover {
-  border-bottom: 1px solid var(--fg-50);
-  color: var(--fg-100);
+  border-bottom: 1px solid var(--primary-underline-active);
+  color: var(--primary);
 }
 
 p {
@@ -139,9 +138,12 @@ p {
 .hoverCard {
   width: 100%;
   max-width: 1000px;
+  /* position: sticky; */
+  /* top: 60px; */
   transform-origin: center top;
   border-bottom: none;
   display: inline-block;
+  background: rgba(0, 0, 0, 0);
   animation: loadIn 0.8s 1s forwards;
   opacity: 0;
 }
@@ -195,18 +197,19 @@ figure:hover {
 
 .hoverCard video,
 .hoverCard img {
-  border: 1px solid var(--fg-10);
+  border: 1px solid var(--image-border-inactive);
   border-radius: 10px;
   display: block;
   width: 100%;
   height: auto;
   max-height: 90vh;
   object-fit: cover;
+  /* transition: .1s; */
 }
 
 .hoverCard:hover > img, .hoverCard:hover > video{
-  box-shadow: 0 0 100x var(--fg-10);
-  border: 1px solid var(--fg-50);
+  box-shadow: 0 0 100x rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255,255,255, .5);
 }
 
 .hoverCard:hover > small{
