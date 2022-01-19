@@ -33,7 +33,7 @@
 
 
   --mobile-size: 15px;
-  --mobile-letter-spacing: 0.03em;
+  --mobile-letter-spacing: 0.02em;
 }
 
 .hoverCard small {
@@ -60,7 +60,7 @@ html {
 }
 .about {
   grid-column-start: 1;
-  width: 515px;
+  width: 510px;
   position: fixed;
 }
 
