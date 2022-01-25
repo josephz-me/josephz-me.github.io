@@ -11,8 +11,8 @@
   --fg: 255;
   --bg-shade: .9;
   --background-secondary: 50;
+  --paragraph-width: 510px;
   
-  /* DARKMODE */
   --fg-100: rgba(var(--fg), var(--fg), var(--fg), 1);
   --fg-90: rgba(var(--fg),var(--fg),var(--fg), 0.9);
   --fg-50: rgba(var(--fg), var(--fg), var(--fg), 0.5);
@@ -55,12 +55,12 @@ html {
 .landing {
   padding: 60px 30px 30px 40px;
   display: grid;
-  grid-template-columns: 520px 1fr;
-  column-gap: 40px;
+  grid-template-columns: var(--paragraph-width) 1fr;
+  column-gap: 60px;
 }
 .about {
   grid-column-start: 1;
-  width: 510px;
+  width: var(--paragraph-width);
   position: fixed;
 }
 
